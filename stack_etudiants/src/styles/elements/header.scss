@@ -1,0 +1,94 @@
+header {
+    background-color: var(--color-background-header);
+    height: 140px;
+    
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; /* Center items vertically */
+  
+      .logo {
+        display: flex; /* Make the anchor tag a flex container */
+        align-items: center; /* Center its children vertically */
+        p {
+          color: var(--color-text-menu);
+          font-size: var(--font-size-medium);
+          font-family: var(--font-Inkut);
+        }
+        img {
+          margin-right: 10px; /* Adjust margin for spacing between image and text */
+        }
+      }
+  
+      .search {
+        display: flex;
+        align-items: center;
+        background-color: white; /* Add white background */
+        border-radius: 20px; /* Add border-radius to make corners rounded */
+        margin-bottom: 20px;
+        width: 300px;
+        height: 50px;
+  
+        img {
+          margin-right: 10px; /* Adjust margin for spacing between image and text */
+        }
+  
+        p {
+          color: var(color-text-search);
+        }
+      }
+  
+      nav {
+        ul.menu {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+  
+          li {
+            display: inline;
+            margin: 0 10px; // Espacement horizontal entre les éléments li
+          }
+  
+          a {
+            text-decoration: none;
+            font-size: var(--font-size-regular);
+            font-family: var(--font-Inconsolata);
+            color: white; // Set text color to white
+          }
+        }
+      }
+    }
+  
+    .parent {
+      display: flex;
+    }
+
+    .login-buttons {
+      text-align: right; // Aligne les boutons à droite
+      .button-list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 0;
+        margin-right: 4%;
+        li {
+          display: inline;
+          a.button {
+            font-size: var(--font-size-regular);
+            font-family: var(--font-Inconsolata);
+            text-decoration: none;
+            color: white;
+            background-color: var(--color-button-background);
+            padding: 5px 10px;
+            border-radius: 5px;
+
+            &.buttonsPrincipal {
+              background-color: var(--color-text-menu); // White background
+              color:var(--color-text-connexion); // Black text color
+              border-radius: 45px; // Rounded corners
+            }
+          }
+        }
+      }
+    }
+  }
+  
