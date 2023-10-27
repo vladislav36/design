@@ -22,11 +22,13 @@ main{
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
             background: var(--color-text-menu); /* Set the background color to white */
-            border-radius: 50px; /* Make the background rounded */
-            color: var(--color-text-connexion ); /* Set the text color to black */
+            border-radius: 50px;
+            h6{
+              color: var(--color-text-connexion ); /* Set the text color to black */
+
+            } /* Make the background rounded */
             width: 12rem;
             height: 40px;
-            font-size: var(--font-size-small); /* Adjust the font size as needed */
         }
     }
 
@@ -54,27 +56,21 @@ main{
         flex-direction: column;
         align-items: center;
         padding-bottom: 40px;
-        p{
-            font-family: var(--font-texte);
-        }
-        /* Ajoutez d'autres styles au besoin */
         .sub-container1{
             background: var(--color-background-carte);
             opacity: 0.85;
             width: auto; 
             height: 100px;
             margin-right: 30%;  
-            p{
+            h2{
                 padding-left: 10px;
                 padding-right: 10px;
                 color: var(--color-text-titreImportant);
-                font-size: var(--font-size-medium);
             }
         }
 
         .sub-container2 {
             background: var(--color-background-carte);
-            opacity: 0.85;
             width: 71rem;
             height: 31rem;
             display: flex;
@@ -83,6 +79,7 @@ main{
             flex-direction: column;
             
             .description {
+              z-index: 1;
               margin-bottom: 14rem;
               background: var(--color-background-description);
               width: 55rem;
@@ -92,10 +89,7 @@ main{
               align-items: center; /* Center vertically */
               margin-top: 3rem; /* Adjust the margin-top value as needed */
               
-              p {
-                line-height: 1.2;
-                color: var(--color-text-descriptif);
-                font-size: var(--font-size-small);
+              h6 {
                 margin-bottom: 15px;
                 text-align: center; /* Center the text horizontally */
                 
@@ -110,7 +104,7 @@ main{
                 bottom: 10%;
                 left: 18%; /* Center horizontally */
                 width: 100%; /* Adjust the width as needed */
-                z-index: -1;
+                z-index: 0;
                 opacity: 1;
             }
 
@@ -120,13 +114,11 @@ main{
                 display: flex;
                 gap: 20px;
                 align-items: center; /* Center the info section horizontally and vertically */
-                p {
+                h6 {
                     text-align: center;
                     margin: 0;
                     padding: 0;
                     color: var(--color-text-descriptif);
-                    font-size: var(--font-size-small);
-
                     b{
                         font-weight: var(--font-extra-bold);
                     }
@@ -137,11 +129,8 @@ main{
 
       .text-container {
         position: absolute;
-        top: 45%;
-        left: 21.2%;
-        font-family: var(--font-titre);
-        color: var(--color-text-titreImportant);
-        font-size: var(--font-size-large);
+        top:50%;
+        left: 19.8%;
         transform-origin: bottom left;
         transform: rotate(-90deg);
         /* Ajoutez d'autres styles au besoin */
@@ -159,15 +148,13 @@ main{
         z-index: 0;
         transform-origin: bottom left;
         background: var(--color-background-special);
-        p{  
+        h2{  
             margin-right: -400px;
             margin-left: 70px;
             margin-top: 15%;
             position: absolute;
-            font-family: var(--font-texte);
             color: var(--color-text-titreImportant);
-            font-size: var(--font-size-medium);
-
+            line-height: 1.6;
         }
         /* Ajoutez d'autres styles au besoin */
 
@@ -186,10 +173,8 @@ main{
       align-items: center;
       justify-content: center;
       gap: 5%;
-      p{
+      h2{
 
-        font-family: var(--font-texte);
-        font-size: var(--font-size-medium);
         color: var(--color-text-descriptif);
         text-align: center;
         b{

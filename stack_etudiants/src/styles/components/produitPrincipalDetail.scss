@@ -1,0 +1,55 @@
+.detailProduitPrinciapl{
+    
+    .wrapper{
+        display: flex;
+        justify-content:center;
+        padding-top: 2rem;
+        flex-direction: row;
+        
+        .containerProduit{
+            max-height: 880px;
+            .decor{
+                    position: relative;                    
+                    right: 15%;
+                    bottom: 35%;
+                    transform-origin: bottom left;
+                    /* Ajoutez d'autres styles au besoin */
+                    margin: 0;
+                    padding: 0;
+                  
+            }
+            
+            .texte{
+                margin-left: -6rem;
+            }
+
+            .produit{
+                display: flex;
+                margin-top: -9rem;
+                margin-left: 15rem;
+                width: 1174px;
+                height: 523px;
+                background-image: url(../assets/images/imagePrincipalPaire.png);
+
+                .courteDescription{
+                    padding-top: 2px;
+                    padding-left: 30px;
+                }
+
+                .longueDescription{
+                    height: 524px;
+                    width: 458px;
+                    padding: 40px;
+                    margin-left: auto;
+                    margin-top: auto;
+                    background: var(--color-background-description-transparent);
+
+                    h3{
+                        color: var(--color-text-titreImportant );
+                    }
+                }
+            }
+
+        }
+    }
+}

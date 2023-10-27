@@ -1,0 +1,36 @@
+.produitDivers{
+    .wrapper{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding-top: 2rem;
+        flex-direction: column;
+
+        .description1{
+            margin-right: 10rem;
+        }
+
+        .deuxiemeProduit{
+            position: relative;
+            right: 12rem;
+            flex-direction: row;
+            display: flex;
+            .info{
+                flex-direction: column;
+                .description2{
+                    margin-left: -10rem;
+                }
+            }
+            .image{
+                position: absolute;
+                top: 5px;
+                right:-35rem  ;
+            }
+
+           
+            
+
+        }
+
+    }
+}
