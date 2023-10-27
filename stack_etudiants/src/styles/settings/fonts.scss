@@ -6,13 +6,17 @@
     --font-primary: 'Baloo 2', Helvetica, Arial, sans-serif;
     --font-secondary: 'Libre Baskerville', Helvetica, Arial, sans-serif;
 
-    --font-Inconsolata: Inconsolata, sans-serif;
-    --font-Inkut: Inknut Antiqua, serif;
+    --font-texte: Inconsolata, sans-serif;
+    --font-titre: Inknut Antiqua, serif;
 
     --font-size-content: 1rem;
     --font-size-button: 1.25rem;
 
+    --font-extra-bold: 800;
+
     /// Grosseur des textes
+    --font-size-small : 1.125rem;
     --font-size-regular: 1.5rem;
     --font-size-medium: 2rem;
+    --font-size-large: 3.875rem;
 }

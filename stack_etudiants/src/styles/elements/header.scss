@@ -1,19 +1,23 @@
 header {
     background-color: var(--color-background-header);
-    height: 140px;
     
     .wrapper {
-      display: flex;
-      justify-content: space-around;
-      align-items: center; /* Center items vertically */
-  
-      .logo {
+      max-height: 140px;
+      height: 140px;
+      width: 100%;
+      
+      .headerSansConnexion{
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /* Center items vertically */
+        margin-bottom: 10px;
+        .logo {
         display: flex; /* Make the anchor tag a flex container */
         align-items: center; /* Center its children vertically */
         p {
           color: var(--color-text-menu);
           font-size: var(--font-size-medium);
-          font-family: var(--font-Inkut);
+          font-family: var(--font-titre);
         }
         img {
           margin-right: 10px; /* Adjust margin for spacing between image and text */
@@ -52,43 +56,50 @@ header {
           a {
             text-decoration: none;
             font-size: var(--font-size-regular);
-            font-family: var(--font-Inconsolata);
+            font-family: var(--font-texte);
             color: white; // Set text color to white
           }
         }
       }
-    }
+      }
+
+      .parent {
+        display: flex;
+      }
   
-    .parent {
-      display: flex;
-    }
-
-    .login-buttons {
-      text-align: right; // Aligne les boutons à droite
-      .button-list {
-        list-style-type: none;
-        padding: 0;
-        margin-top: 0;
-        margin-right: 4%;
-        li {
-          display: inline;
-          a.button {
-            font-size: var(--font-size-regular);
-            font-family: var(--font-Inconsolata);
-            text-decoration: none;
-            color: white;
-            background-color: var(--color-button-background);
-            padding: 5px 10px;
-            border-radius: 5px;
-
-            &.buttonsPrincipal {
-              background-color: var(--color-text-menu); // White background
-              color:var(--color-text-connexion); // Black text color
-              border-radius: 45px; // Rounded corners
+      .login-buttons {
+        text-align: right;
+        padding-top: 10px;
+        .button-list {
+          //aligne les bouton a droite a la list
+          display: flex;
+          justify-content: flex-end;
+          list-style-type: none;
+          margin-top: 0;
+          margin-right: 4%;
+          li {
+            display: inline;
+            a.button {
+              font-size: var(--font-size-regular);
+              font-family: var(--font-texte);
+              text-decoration: none;
+              color: var(--color-text-menu);
+              background-color: var(--color-button-background);
+              padding: 5px 10px;
+              border-radius: 5px;
+  
+              &.buttonsPrincipal {
+                background-color: var(--color-text-menu); // White background
+                color:var(--color-text-connexion); // Black text color
+                border-radius: 45px; // Rounded corners
+              }
             }
           }
         }
       }
+      
     }
+  
+   
   }
   
