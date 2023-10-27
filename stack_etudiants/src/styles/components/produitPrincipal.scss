@@ -1,4 +1,4 @@
-main {
+main{
 
     .background-container {
       position: relative;
@@ -155,8 +155,8 @@ main {
         width: 29rem;
         display: flex;
         bottom: 0;
-        right: 11.55%;
-        z-index: 1;
+        right: 11.25%;
+        z-index: 0;
         transform-origin: bottom left;
         background: var(--color-background-special);
         p{  
@@ -173,6 +173,29 @@ main {
 
       }
 
+    }
+
+    .contribution{
+      width: 92rem;
+      height: 7rem;
+      margin-top: 39px;
+      margin-left: 11.5%;
+      display: flex;
+      text-align: center;
+      background: var(--color-background-special);
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      p{
+
+        font-family: var(--font-texte);
+        font-size: var(--font-size-medium);
+        color: var(--color-text-descriptif);
+        text-align: center;
+        b{
+          font-weight: 800;
+        }
+      }
     }
     
   }

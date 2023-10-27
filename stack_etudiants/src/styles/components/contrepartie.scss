@@ -1,0 +1,87 @@
+.contrepartie{
+    .wrapper{
+       display: flex;
+       justify-content:center;
+       padding-top: 5rem;
+       flex-direction: row;
+
+
+       .card{
+        width: 572px;
+
+        .card-titre{
+            background: var(--color-background-description );
+            width: 422px;
+            height: 42px;
+
+            p{
+                font-weight: var(--font-extra-bold);
+                color: var(--color-text-titreImportant);
+                margin-left: 20px;
+                font-family: var(--font-texte);
+                font-size: var(--font-size-medium);
+            }
+        }
+        .card-description{
+            background-color: var(--color-background-description );
+            height: 650px;
+
+            
+            .prdouitRestant{
+                margin-left: auto;
+                margin-top: auto;
+            }
+
+            .information{
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-items: center;
+                gap: 10px;
+            }
+
+            .imageInformation{
+                height: 260px;
+                background-image: url(../assets/images/Contrepartie1.png);
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                .produit{
+                    margin-left: 50px;
+                    width: 289px;
+                    height: 168px;
+                    background: var(--color-background-description-transparent);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        opacity: 1;
+                    }
+                }
+
+                .prix{
+                    width: 118px;
+                    height: 54px;
+                    display: flex;
+                    background: var(--color-background-description-transparent);
+                    margin-left: auto;
+                    margin-top: auto;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        text-align: center;
+                        color: var(--color-text-titreImportant);
+                        font-family: var(--font-texte);
+                        font-size: var(--font-size-medium);
+                    }
+                }
+            }
+
+           
+        }
+       }
+    }
+}
