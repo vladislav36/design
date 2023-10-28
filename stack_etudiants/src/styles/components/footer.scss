@@ -1,24 +1,58 @@
-.partie1, .partie2, .logoFooter, .linksFooter{
-    display: flex;
-}
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 20px;
+    margin-top: 13rem;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
 
-footer{
-    margin-top: 200px;
-    background-color: #0A142F;
-    color: white;
-}
 
-.partie1, .partie2{
-    orientation: landscape;
-    justify-content: space-between;
-    margin-right: 200px;
-    margin-left: 200px;
-}
+    background: var(--color-footer);
+  
+    
+  
+    .colonneLien ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin-top: 20px;
+        h6 {
+          font-size: 16px;
+          margin: 0;
+        }
+      }
 
-.partie1{
-    margin-bottom: 50px;
-}
+      .titre{
+        margin-top: 30px;
+      }
 
-.logoFooter{
-    align-items: center;
-}
+      h2{
+        margin: 0;
+        color: var(--color-text-menu);
+      }
+
+      .positionEnBas {
+        margin-top: 9rem;
+        border-bottom: 1px solid #fff; /* Ajoute un trait en dessous */
+        display: inline-block; /* Affiche la ligne en dessous avec la largeur du texte */
+
+      }
+      .positionEnBas2 {
+        margin-top: 12.5rem;
+        display: inline-block; /* Affiche la ligne en dessous avec la largeur du texte */
+
+      }
+      .positionEnBas3 {
+        margin-top: 13rem;
+        border-bottom: 1px solid #fff; /* Ajoute un trait en dessous */
+        display: inline-block; /* Affiche la ligne en dessous avec la largeur du texte */
+      }
+    }
+  
+   
+  }
+  

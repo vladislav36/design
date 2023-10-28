@@ -1,5 +1,17 @@
 main{
 
+    .image1{
+      position: absolute;
+      z-index: -1;
+      top: 45%;
+    }
+    .image2{
+      position: absolute;
+      z-index: -1;
+      top: 30%;
+      right: 0%;
+    }
+
     .background-container {
       position: relative;
         
